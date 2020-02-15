@@ -5,4 +5,4 @@ script_execute(ScrClockTimer,x,y,global.time,room_speed*120,color,32,1)
 
 // TESTING ONLY
 
-draw_text(0,0,string(global.time))
+draw_text(0,20,string(global.time))
