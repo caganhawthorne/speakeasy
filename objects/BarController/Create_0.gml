@@ -1,7 +1,10 @@
 depth = -10
+// Create the intro fade effect
+instance_create_depth(0,0,-11,Fade)
 // Global variable declarations
-// Certain specific things like time are set in their related objects (clock, for instance)
-
+// Certain specific things like time are set in their related objects (time is in Clock, for instance)
+// Checks to see if the game has ended
+global.gameend = false
 // Sets the inital drink options, can be added to later
 global.drinklist = ["vodka","gin","rum","whiskey"]
 // Same, but for the things they'd like to add to the drink

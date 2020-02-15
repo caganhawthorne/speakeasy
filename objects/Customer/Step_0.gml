@@ -13,12 +13,10 @@ if global.choice = false{
 if global.choice = true{
 	// Increase the alpha incrimentally for fade in
 	if alpha < 1 and global.served = false {alpha += .018}
-	// Fade out
-	else if global.served = true and alpha > 0 {alpha -= .018}
+	// Fade out if the customer is served and not a cop
+	else if global.served = true and alpha > 0 and global.customertype != "cop" {alpha -= .018}
 	// Destroy self after the fade out is finished
-	if alpha <= 0 {
-		instance_destroy()
-		}
+	if alpha <= 0 {instance_destroy()}
 	// Spawns a speech bubble after the fade
 	if alpha >= 1 and global.served = false and instance_number(Speech) < 1 and global.choice = true{
 		instance_create_depth(x-200,y-300,0,Speech)
@@ -36,9 +34,11 @@ if global.choice = true{
 		// Sets the amount to be paid
 		if global.served = true and global.paid = false{
 			global.paid = true
-			//We can set the prices for each drink and topping later, right now it is set to a default value
-			if global.topping = "none"{global.money += 10}
-			else {global.money += 15}
+			// We can set the prices for each drink and topping later, right now it is set to a default value
+			// Payment is sent to the MoneyAdd object, which adds the money to global.money when it is created. I use this to help its draw event
+			if global.topping = "none" {global.pay = 10}
+			else {global.pay = 15}
+			instance_create_depth(x,y,-5,MoneyAdd)
 		}
 	}
 }

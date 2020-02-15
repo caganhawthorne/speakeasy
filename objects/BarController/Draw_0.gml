@@ -14,3 +14,6 @@ for (i = 0; i < array_length_1d(global.toppinglist); i += 1){
 	if global.toppinglist[i] = "lime"{draw_sprite(SLime,0,304,664)}
 	if global.toppinglist[i] = "lemon"{draw_sprite(SLemon,0,424,664)}
 }
+
+// Sets default draw color to white, if there are conflicts it is because of ScrClockTimer
+draw_set_color(c_white)

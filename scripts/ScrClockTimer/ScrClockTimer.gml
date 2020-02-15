@@ -9,7 +9,7 @@
 if (argument2 > 0) { // won't draw anything if there is no time remaining
     var i, len, tx, ty, val;
     
-    var numberofsections = 60 // number of triangles
+    var numberofsections = 1000 // number of triangles
     var sizeofsection = 360/numberofsections
     
     val = (argument2/argument3) * numberofsections 
@@ -31,5 +31,6 @@ if (argument2 > 0) { // won't draw anything if there is no time remaining
         draw_primitive_end();
     }
     draw_set_alpha(1);
+	draw_set_color(c_white)
 }
     
