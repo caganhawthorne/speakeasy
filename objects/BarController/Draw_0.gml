@@ -6,6 +6,7 @@ for (i = 0; i < array_length_1d(global.drinklist); i += 1){
 	if global.drinklist[i] = "gin"{draw_sprite(SGin,0,164,544)}
 	if global.drinklist[i] = "rum"{draw_sprite(SRum,0,264,544)}
 	if global.drinklist[i] = "whiskey"{draw_sprite(SWhiskey,0,364,544)}
+	if global.drinklist[i] = "absinthe"{draw_sprite(SAbsinthe,0,464,544)}
 }
 // Same, but with toppings
 for (i = 0; i < array_length_1d(global.toppinglist); i += 1){
@@ -13,6 +14,7 @@ for (i = 0; i < array_length_1d(global.toppinglist); i += 1){
 	if global.toppinglist[i] = "orange"{draw_sprite(SOrange,0,184,664)}
 	if global.toppinglist[i] = "lime"{draw_sprite(SLime,0,304,664)}
 	if global.toppinglist[i] = "lemon"{draw_sprite(SLemon,0,424,664)}
+	if global.toppinglist[i] = "syrup"{draw_sprite(SSyrup,0,544,664)}
 }
 
 // Sets default draw color to white, if there are conflicts it is because of ScrClockTimer

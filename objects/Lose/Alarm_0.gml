@@ -1,2 +1,2 @@
-// restart room after 5 seconds
-room_restart()
+// restart game after 5 seconds
+game_restart()

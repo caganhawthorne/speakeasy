@@ -6,7 +6,7 @@ text = ""
 if global.choice = false {text = "I'm outta here!"}
 else if global.served = false{
 	// If there is a topping
-	if global.topping != "none" {text = "Hey, can I get a " + global.drink + " with " + global.topping + "?"}
+	if global.topping != "none" {text = "Hey, can I get some " + global.drink + " with " + global.topping + "?"}
 	// If there is not
 	else {text = "Hey, can I get a " + global.drink + "?"}
 }
