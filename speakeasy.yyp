@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1eda8eb6-3402-4c3e-bcba-fac214862d67",
+            "Value": {
+                "id": "d4db1a70-4178-4035-91e4-667d143b9c1e",
+                "resourcePath": "objects\\CustomerClock\\CustomerClock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24940658-f0aa-4db1-91b3-3356aeba098d",
             "Value": {
                 "id": "2bd5b34e-b677-4edd-9441-1c9035c7f1c4",

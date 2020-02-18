@@ -4,6 +4,8 @@ text = ""
 // Order text if the customer is not satisfied yet
 // Sets the text if you don't serve
 if global.choice = false {text = "I'm outta here!"}
+// Sets text if you run out of customer time
+else if global.customertime <= 0 and global.customertime != -1000 {text = "Not waiting anymore"}
 else if global.served = false{
 	// If there is a topping
 	if global.topping != "none" {text = "Hey, can I get some " + global.drink + " with " + global.topping + "?"}

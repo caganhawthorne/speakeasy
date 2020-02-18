@@ -1,4 +1,9 @@
 depth = -1
+// Sets the amount of time you have to serve the customer before they leave
+global.customertime = room_speed*30
+// Creates the clock that displays the time to serve
+instance_create_depth(x,y-320,-4,CustomerClock)
+// Initially sets the customer choice to serve to true for later
 global.choice = true
 // Chooses customer type
 chooser = random_range(0,100)

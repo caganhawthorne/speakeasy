@@ -24,6 +24,8 @@ global.moneyneeded = 100
 if global.level != 1 {global.moneyneeded += global.level*50}
 // Sets the customer type in Customer
 global.customertype = ""
+// Sets the customer serve time allowed, is initialized as this number so that it can be handled in customer
+global.customertime = -1000
 
 // Sets if you want to help the customer or not, initially set to true but is changed by the choice options
 global.choice = true
