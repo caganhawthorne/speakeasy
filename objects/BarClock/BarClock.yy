@@ -1,38 +1,38 @@
 {
-    "id": "8a3a4d05-df91-4b29-9e46-13a4c9171561",
+    "id": "953e5703-54b9-4084-a97c-be13236a80cf",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Clock",
+    "name": "BarClock",
     "eventList": [
         {
-            "id": "d0ee117c-2c93-4297-8d1a-0186b90e587c",
+            "id": "742898c6-f1ab-4f69-9e03-ccf40baadb71",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "8a3a4d05-df91-4b29-9e46-13a4c9171561"
+            "m_owner": "953e5703-54b9-4084-a97c-be13236a80cf"
         },
         {
-            "id": "15a264dc-6a84-4ca4-af54-8aca07b961d1",
+            "id": "0475ac02-671a-4446-b5d6-584ae0513cce",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "8a3a4d05-df91-4b29-9e46-13a4c9171561"
+            "m_owner": "953e5703-54b9-4084-a97c-be13236a80cf"
         },
         {
-            "id": "85f781fd-013a-4805-9ba3-0a7e5bfb995e",
+            "id": "e721a384-490b-4e9c-982d-5fe583a92808",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "8a3a4d05-df91-4b29-9e46-13a4c9171561"
+            "m_owner": "953e5703-54b9-4084-a97c-be13236a80cf"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
