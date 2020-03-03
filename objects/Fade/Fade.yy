@@ -1,38 +1,38 @@
 {
-    "id": "c8a52687-d289-462c-90d7-c2f708d55d5f",
+    "id": "7a24cbe3-3aa2-4e32-908b-91221426f85b",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "Fade",
     "eventList": [
         {
-            "id": "9e6c5cb1-0960-4e34-b1e7-14a18bbcf45d",
+            "id": "12d4027b-337e-4354-b7e5-142ca4f3383d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "c8a52687-d289-462c-90d7-c2f708d55d5f"
+            "m_owner": "7a24cbe3-3aa2-4e32-908b-91221426f85b"
         },
         {
-            "id": "8d0c0f57-19d9-4b7f-ada1-027475457edb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c8a52687-d289-462c-90d7-c2f708d55d5f"
-        },
-        {
-            "id": "715ef49c-1354-4a1a-a658-5dc2a648c87b",
+            "id": "0496e9e3-bf70-4865-bf93-a779b89d1fca",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "c8a52687-d289-462c-90d7-c2f708d55d5f"
+            "m_owner": "7a24cbe3-3aa2-4e32-908b-91221426f85b"
+        },
+        {
+            "id": "fa63df72-fa84-4c71-82a3-a3345982bf5a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "7a24cbe3-3aa2-4e32-908b-91221426f85b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

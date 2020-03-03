@@ -1,48 +1,38 @@
 {
-    "id": "eea86d9e-5227-4c60-8dad-ef4a9cd49c6b",
+    "id": "aa1f6ddf-bdc6-4696-8519-cb950ced5679",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "MoneyAdd",
     "eventList": [
         {
-            "id": "a23ebb73-6d6c-4957-a5b3-55c54f657847",
+            "id": "679033cb-e619-4bdd-b4aa-305af329d4e2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "eea86d9e-5227-4c60-8dad-ef4a9cd49c6b"
+            "m_owner": "aa1f6ddf-bdc6-4696-8519-cb950ced5679"
         },
         {
-            "id": "50017bcc-595a-49ee-b0b9-6de43c74e2d2",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "eea86d9e-5227-4c60-8dad-ef4a9cd49c6b"
-        },
-        {
-            "id": "67109d9c-ff44-473f-bc3d-056712c05d91",
+            "id": "91c71670-6906-419c-943f-a6ab9ca74f6c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "eea86d9e-5227-4c60-8dad-ef4a9cd49c6b"
+            "m_owner": "aa1f6ddf-bdc6-4696-8519-cb950ced5679"
         },
         {
-            "id": "f96aabe5-5ba3-46b2-a5e4-9138de8c2636",
+            "id": "164a2f29-c23e-41ba-8dc7-ac11541b3a4f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "eea86d9e-5227-4c60-8dad-ef4a9cd49c6b"
+            "m_owner": "aa1f6ddf-bdc6-4696-8519-cb950ced5679"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

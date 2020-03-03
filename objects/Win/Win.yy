@@ -1,28 +1,28 @@
 {
-    "id": "b78ead49-0d29-4562-98ed-e763050fc318",
+    "id": "8cff169d-fe30-4e33-85a0-8d779290c4ec",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "Win",
     "eventList": [
         {
-            "id": "b3558531-cb89-4331-8913-652d7b70eb3a",
+            "id": "9cb7eda1-520b-44f5-a28d-89e9c42befc6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "b78ead49-0d29-4562-98ed-e763050fc318"
+            "m_owner": "8cff169d-fe30-4e33-85a0-8d779290c4ec"
         },
         {
-            "id": "9bc83f29-89e5-495e-92eb-d4ed26ad9c5b",
+            "id": "c4a2167f-0659-4288-9ac1-82b476c9f611",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 2,
-            "m_owner": "b78ead49-0d29-4562-98ed-e763050fc318"
+            "m_owner": "8cff169d-fe30-4e33-85a0-8d779290c4ec"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "01c67ea6-d6db-4a3b-8e5d-42d00b2ef936",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

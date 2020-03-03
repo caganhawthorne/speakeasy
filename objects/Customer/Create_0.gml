@@ -1,25 +1,42 @@
 depth = -1
-// Sets the amount of time you have to serve the customer before they leave
-global.customertime = room_speed*30
-// Creates the clock that displays the time to serve
-//instance_create_depth(x,y-320,-4,CustomerClock)
-// Initially sets the customer choice to serve to true for later
-global.choice = true
-// Chooses customer type
-chooser = random_range(0,100)
-if chooser <= 20 {global.customertype = "cop"}
-else {global.customertype = "regular"}
+// Randomizes the game seed. Makes it so that the random variables don't always act the same
+randomize()
+
 // Set the alpha variable for the fade-in
 alpha = .009
+
+// Initially sets the customer choice to serve to true for later
+global.choice = true
+
 // Sets if they have been served or not and whether or not they have paid
 global.served = false
 global.paid = false
-// Sets their order [drink,topping]
+
+// Choose the customer type and subimage
+script_execute(CustomerChooser)
+
+// Checks if the customer is a mobster
+if (global.customertype = "special" and pick = 1) or (global.customertype = "cop" and pick = 4) {global.ismob = true}
+else {global.ismob = false}
+
+// Creates a timer if neccessary
+global.customertime = -1000
+if global.ismob = true {
+	global.customertime = room_speed*30
+}
+
+// Sets their order [cup,drink,topping]
 randomize()
+maxlength = array_length_1d(global.cuplist)
+choice = random_range(0,maxlength)
+global.cup = global.cuplist[choice]
 maxlength = array_length_1d(global.drinklist)
 choice = random_range(0,maxlength)
 global.drink = global.drinklist[choice]
 maxlength = array_length_1d(global.toppinglist)
 choice = random_range(0,maxlength)
 global.topping = global.toppinglist[choice]
-global.order = [global.drink,global.topping]
+global.order = [global.cup,global.drink,global.topping]
+
+// Sets whether or not they paid yet
+paid = false

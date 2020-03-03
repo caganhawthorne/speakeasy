@@ -1,1 +1,2 @@
-room_goto(RBar)
+// Go to the main room
+room_goto(BarRoom)

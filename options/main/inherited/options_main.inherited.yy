@@ -3,7 +3,7 @@
         "Value": 4278190080
     },
     "option_sci_usesci": true,
-    "option_gameguid": "1e6d5b94-71ae-48f9-9679-94eea95233ec",
+    "option_gameguid": "bf019786-77a9-4ef5-bc69-b5ef6a108942",
     "option_game_speed": 60
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{
     "targets": 461609314234257646
