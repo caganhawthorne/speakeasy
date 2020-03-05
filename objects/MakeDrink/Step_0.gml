@@ -21,6 +21,9 @@ if hascup = true{
 	if place_meeting(x,y,Vodka){
 		global.makercontains[array_length_1d(global.makercontains)] = "vodka"
 	}
+	if place_meeting(x,y,IceCube) {
+		global.makercontains[array_length_1d(global.makercontains)] = "ice"
+	}
 }
 // Adds the distinction of "none" if there is no topping
 if array_length_1d(global.makercontains) = 2 {global.makercontains[array_length_1d(global.makercontains)] = "none"}
