@@ -1,0 +1,1 @@
+if instance_number(Customer) < 1 {instance_destroy()}
