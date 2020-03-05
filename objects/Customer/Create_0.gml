@@ -16,7 +16,7 @@ global.paid = false
 script_execute(CustomerChooser)
 
 // Checks if the customer is a mobster
-if (global.customertype = "special" and pick = 1) or (global.customertype = "cop" and pick = 4) {global.ismob = true}
+if (global.customertype = "special" and pick = 1) or (global.customertype = "cop" and pick = 1) {global.ismob = true}
 else {global.ismob = false}
 
 // Creates a timer if neccessary
@@ -25,8 +25,14 @@ if global.ismob = true {
 	global.customertime = room_speed*30
 }
 
-// Sets their order [cup,drink,topping]
+// Sets their order [cup,ice,drink,topping]
+
+// want ice?
 randomize()
+icechoice = random_range(0,1)
+if icechoice = 0 {global.ice = "ice"}
+else {global.ice = "no ice"}
+
 maxlength = array_length_1d(global.cuplist)
 choice = random_range(0,maxlength)
 global.cup = global.cuplist[choice]
@@ -36,7 +42,7 @@ global.drink = global.drinklist[choice]
 maxlength = array_length_1d(global.toppinglist)
 choice = random_range(0,maxlength)
 global.topping = global.toppinglist[choice]
-global.order = [global.cup,global.drink,global.topping]
+global.order = [global.cup,global.ice,global.drink,global.topping]
 
 // Sets whether or not they paid yet
 paid = false

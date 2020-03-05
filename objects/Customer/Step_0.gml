@@ -27,9 +27,9 @@ else if global.choice = true{
 		instance_create_depth(x-230,y-300,0,Speech)
 		// Creates your options for serving
 		if instance_number(ChooseServe) < 2{
-			yes = instance_create_depth(x-200,y-100,0,ChooseServe)
+			yes = instance_create_depth(x-300,y-100,0,ChooseServe)
 			with yes {image_index = 0}
-			no = instance_create_depth(x+200,y-100,0,ChooseServe)
+			no = instance_create_depth(x+300,y-100,0,ChooseServe)
 			with no {image_index = 1}
 		}
 	}

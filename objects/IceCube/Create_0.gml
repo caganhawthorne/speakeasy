@@ -1,3 +1,4 @@
+depth = -4
 // Keeps track of where it spawned
 firstx = x
 firsty = y

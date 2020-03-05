@@ -10,12 +10,12 @@ global.gameend = false
 global.time = room_speed*120
 
 // Sets the inital drink options, adds extras on as the game progresses
-global.drinklist = ["whiskey","vodka"]
+global.drinklist = ["whiskey","vodka","gin"]
 //if global.level = 2 {global.drinklist[array_length_1d(global.drinklist)] = "absinthe"}
 // Same, but for the things they'd like to add to the drink
-global.toppinglist = ["none","any"]
+global.toppinglist = ["none","any","lemon","strawberry","lime"]
 // Same, but for the glass required
-global.cuplist = ["champagne","shot"]
+global.cuplist = ["champagne","shot","martini"]
 
 //if global.level = 2 {global.toppinglist[array_length_1d(global.toppinglist)] = "syrup"}
 // Sets the order that the customer will make
@@ -26,13 +26,15 @@ global.cup = ""
 global.drink = ""
 // Sets the selected topping
 global.topping = ""
+// Sets ice or not
+global.ice = "no ice"
 
 // Clears the current drink selection using the Clear object
 global.clear = false
 
 // Sets how much money is needed to win, currently increases by 25 per level
 global.moneyneeded = 100
-if global.level != 1 {global.moneyneeded += global.level*25}
+if global.level != 1 {global.moneyneeded += (global.level-1)*25}
 
 // Sets the customer type in Customer
 global.customertype = ""
@@ -54,19 +56,31 @@ global.choice = true
 
 // Checks to see what drinks have been unlocked and creates them if there are
 for (i = 0; i < array_length_1d(global.drinklist); i += 1){
-	if global.drinklist[i] = "whiskey"{instance_create_depth(128,800,-4,Whiskey)}
-	if global.drinklist[i] = "vodka"{instance_create_depth(128,992,-4,Vodka)}
+	if global.drinklist[i] = "whiskey"{instance_create_depth(1152,960,-4,Whiskey)}
+	if global.drinklist[i] = "vodka"{instance_create_depth(1344,960,-4,Vodka)}
+	if global.drinklist[i] = "gin"{instance_create_depth(928,960,-4,Gin)}
 }
 // Same, but with toppings
 for (i = 0; i < array_length_1d(global.toppinglist); i += 1){
+	if global.toppinglist[i] = "strawberry"{instance_create_depth(64,896,-4,Strawberry)}
+	if global.toppinglist[i] = "lime"{instance_create_depth(160,896,-4,Lime)}
+	if global.toppinglist[i] = "lemon"{instance_create_depth(256,896,-4,Lemon)}
 }
 // Same, but with cups
 for (i = 0; i < array_length_1d(global.cuplist); i += 1){
-	if global.cuplist[i] = "champagne"{instance_create_depth(800,800,-4,ChampagneGlass)}
-	if global.cuplist[i] = "shot"{instance_create_depth(800,992,-4,ShotGlass)}
+	if global.cuplist[i] = "champagne"{instance_create_depth(64,736,-4,ChampagneGlass)}
+	if global.cuplist[i] = "martini"{instance_create_depth(224,736,-4,MartiniGlass)}
+	if global.cuplist[i] = "shot"{instance_create_depth(394,736,-4,ShotGlass)}
 }
 
 
 // Faux variables to stop things in step events from breaking
 // Used in Controller step to control the win event
 winspawn = false
+
+// SPAWN SPECIAL CUSTOMERS
+global.specialcustomer = false
+if global.level = 2 {
+	global.specialcustomer = true
+	instance_create_depth(960,416,-1,RookieCop)
+}

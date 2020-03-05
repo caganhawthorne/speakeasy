@@ -9,20 +9,48 @@ else {global.customertype = "regular"}
 
 // Picks between the customer subimages, making sure the same one isn't called twice
 if global.customertype = "regular"{
-	pick = round(random_range(0,5))
-	if pick = global.regularlastpick{
-		while pick = global.regularlastpick{
-			pick = round(random_range(0,5))
+	if global.level = 1 {
+		pick = round(random_range(0,1))
+		if pick = global.regularlastpick{
+			while pick = global.regularlastpick{
+				pick = round(random_range(0,1))
+			}
+		}
+	}
+	else if global.level = 2 {
+		pick = round(random_range(0,5))
+		if pick = global.regularlastpick{
+			while pick = global.regularlastpick{
+				pick = round(random_range(0,5))
+			}
+		}
+	}
+	else {
+		pick = round(random_range(2,7))
+		if pick = global.regularlastpick{
+			while pick = global.regularlastpick{
+				pick = round(random_range(2,7))
+			}
 		}
 	}
 	global.regularlastpick = pick
 }
 
 else if global.customertype = "cop"{
-	pick = round(random_range(0,4))
-	if pick = global.coplastpick{
-		while pick = global.coplastpick{
-			pick = round(random_range(0,4))
+	if global.level = 2 {
+		pick = round(random_range(0,5))
+		if pick = global.coplastpick{
+			while pick = global.coplastpick{
+				pick = round(random_range(0,5))
+			}
+		}
+	}
+	else {
+		pick = round(random_range(1,6))
+		if pick = global.coplastpick{
+			while pick = global.coplastpick{
+				pick = round(random_range(1,6))
+			}
 		}
 	}
 	global.coplastpick = pick

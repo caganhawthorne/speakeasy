@@ -13,7 +13,7 @@ if moving = true and global.grab = true{
 	with MakeDrink {image_index = 0}
 }
 
-if instance_number(Customer) = 0{
+if instance_number(Customer) = 0 and instance_number(SpecialCustomer) = 0{
 	// Sends them back to their first position if the player submits an order
 	x = firstx
 	y = firsty
