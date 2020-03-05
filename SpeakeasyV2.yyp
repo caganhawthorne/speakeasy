@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "374c820a-8e8e-48b8-a5ab-465de5339c0f",
+            "Value": {
+                "id": "e41861d7-39a6-4644-803e-59297da8a6fe",
+                "resourcePath": "sounds\\snd_level2\\snd_level2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "40ccfd95-4392-4fb2-bd44-9a7fc2e1331e",
             "Value": {
                 "id": "585d9132-af78-4967-aea1-77607e2548f6",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "604500af-99f3-4a1e-902d-7305ba8c33e8",
+            "Value": {
+                "id": "2d3f1b1d-a792-4be7-8d02-50c9a47c81c8",
+                "resourcePath": "objects\\Music_Level2\\Music_Level2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "63a4ef27-db05-46e5-aa20-57e4f3d91a87",
             "Value": {
                 "id": "1b801f67-57cc-408b-a484-51247a44c624",
@@ -332,6 +348,14 @@
                 "id": "2a889c3d-dae9-448c-b769-85a75f9a78b4",
                 "resourcePath": "sprites\\SChampagneGlass\\SChampagneGlass.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8669d0b0-a11e-4004-a39f-9c25760f9952",
+            "Value": {
+                "id": "e2bb91e5-683d-4d69-bced-b586fa331d49",
+                "resourcePath": "sounds\\snd_pause\\snd_pause.yy",
+                "resourceType": "GMSound"
             }
         },
         {
