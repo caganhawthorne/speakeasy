@@ -40,7 +40,16 @@ if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 
 				else {correct = false}
 			}
 		}
-		if correct = true {global.served = true}
+		if correct = true {
+			global.served = true
+			//Random coin sound
+			//Create randomized variable
+			coinJarsnd = irandom(3)
+			// Play certain sound at random
+			if coinJarsnd = 1 {audio_play_sound(snd_tips1, 500, false);}
+			if coinJarsnd = 2 {audio_play_sound(snd_tips2, 500, false);}
+			if coinJarsnd = 3 {audio_play_sound(snd_tips3, 500, false);}
+			}
 		else {global.choice = false}
 		// The customer currently just leaves if you get the order wrong. Works the same way as denying them service
 	}
@@ -50,3 +59,6 @@ if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 
 global.clear = true
 // Gives the objects time to move back
 alarm[0] = room_speed
+
+//Bell sounds when clicked
+audio_play_sound(snd_bell, 400, false)

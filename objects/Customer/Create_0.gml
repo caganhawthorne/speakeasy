@@ -29,7 +29,7 @@ if global.ismob = true {
 
 // want ice?
 randomize()
-icechoice = random_range(0,1)
+icechoice = choose(0,1)
 if icechoice = 0 {global.ice = "ice"}
 else {global.ice = "no ice"}
 

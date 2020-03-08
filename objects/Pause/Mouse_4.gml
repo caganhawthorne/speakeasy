@@ -8,12 +8,26 @@ if(paused = true) {
 	// Stop level music
 	audio_pause_all()
 	//Play pause music
-	audio_play_sound(snd_pause, 700, true)
+	audio_play_sound(m_pause, 700, true)
 }
+//When resuming game, resume music
 else {
-	audio_stop_sound(snd_pause)
+	//Stop pause music
+	audio_stop_sound(m_pause)
+	//Resume level music
+	if(global.level = 1) {
+		audio_resume_all()
+	}
 	if(global.level = 2) {
 		audio_resume_all()
 	}
-	
+	if(global.level = 3) {
+		audio_resume_all()
+	}
+	if(global.level = 4) {
+		audio_resume_all()
+	}
+	if(global.level = 5) {
+		audio_resume_all()
+	}
 }
