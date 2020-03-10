@@ -8,7 +8,8 @@ if global.choice = false or (global.customertime <= 0 and global.customertime !=
 	// Uses paid to only iterate once
 	if pick = 1 and global.customertype = "special" and paid = false {
 		paid = true
-		global.money -= 50
+		global.pay -= 20
+		instance_create_depth(TipJar.x,TipJar.y,-9,MoneyAdd)
 		}
 	if alpha > 0 {alpha -= .018}
 	else {instance_destroy()}

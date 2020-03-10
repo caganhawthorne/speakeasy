@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "b8ad3282-6b33-453b-9261-59897e7d2eb0",
+            "Value": {
+                "id": "00b973e2-427d-42ea-bed6-737e4e76da1e",
+                "resourcePath": "sprites\\SIngredientText\\SIngredientText.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb495b16-60db-4b09-81c9-2a5aeb80f127",
             "Value": {
                 "id": "0e277953-11b4-4cb9-ae9a-34a708373aef",
@@ -804,6 +812,14 @@
                 "id": "b50ddb7d-98a8-409c-8d43-a3439273a626",
                 "resourcePath": "sounds\\snd_tips1\\snd_tips1.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c24c2b82-d68c-42e0-a997-145f32527f69",
+            "Value": {
+                "id": "278d06c0-ecdd-4f15-a79b-5312eb588332",
+                "resourcePath": "objects\\IngredientText\\IngredientText.yy",
+                "resourceType": "GMObject"
             }
         },
         {

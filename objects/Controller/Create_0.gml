@@ -33,8 +33,8 @@ global.ice = "no ice"
 global.clear = false
 
 // Sets how much money is needed to win, currently increases by 25 per level
-global.moneyneeded = 100
-if global.level != 1 {global.moneyneeded += (global.level-1)*25}
+global.moneyneeded = 75
+if global.level != 1 {global.moneyneeded += (global.level-1)*15}
 
 // Sets the customer type in Customer
 global.customertype = ""

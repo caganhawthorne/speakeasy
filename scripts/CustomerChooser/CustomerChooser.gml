@@ -38,7 +38,7 @@ if global.customertype = "regular"{
 
 else if global.customertype = "cop"{
 	if global.level = 2 {
-		pick = round(random_range(0,5))
+		pick = choose(0,2,3,4,5)
 		if pick = global.coplastpick{
 			while pick = global.coplastpick{
 				pick = round(random_range(0,5))
@@ -57,11 +57,22 @@ else if global.customertype = "cop"{
 }
 
 else {
-	pick = round(random_range(0,1))
-	if pick = global.speciallastpick{
-		while pick = global.speciallastpick{
-			pick = round(random_range(0,1))
+	if global.level < 3 {
+		pick = 0
+		if pick = global.speciallastpick{
+			while pick = global.speciallastpick{
+				pick = round(random_range(0,1))
+			}
 		}
+		global.speciallastpick = pick
 	}
+	else {
+		pick = choose(0,1)
+		if pick = global.speciallastpick {
+			while pick = global.speciallastpick {
+				pick = choose(0,1)
+			}
+		}
 	global.speciallastpick = pick
+	}
 }
