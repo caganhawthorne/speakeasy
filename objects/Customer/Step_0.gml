@@ -57,6 +57,7 @@ else if global.choice = true{
 				else {global.pay += 10}
 			}
 			else {global.pay = 15}
+			if global.customertype = "special" and pick = 0 {global.pay = 0}
 			instance_create_depth(TipJar.x,TipJar.y,-9,MoneyAdd)
 		}
 		// Create the MoneyAdd object over the tip jar

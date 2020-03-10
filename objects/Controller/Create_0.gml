@@ -84,3 +84,6 @@ if global.level = 2 {
 	global.specialcustomer = true
 	instance_create_depth(960,416,-1,RookieCop)
 }
+
+// Sets display text for objects
+instance_create_depth(0,0,-11,ObjectIdentify)

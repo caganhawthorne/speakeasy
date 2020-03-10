@@ -1,14 +1,23 @@
 {
-    "id": "6751e3d5-4115-4dec-bb0f-2004862ec8ea",
+    "id": "6c8088b3-cd67-40a1-a282-6bfe8fee82a9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Whiskey",
+    "name": "ObjectIdentify",
     "eventList": [
-        
+        {
+            "id": "6579bd7a-9b7f-45b4-8478-40b53d5b6448",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "6c8088b3-cd67-40a1-a282-6bfe8fee82a9"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "577d04aa-9d1f-4059-889f-da6319446d23",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "daff48e2-1529-4d86-baa6-7b5af21966a7",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

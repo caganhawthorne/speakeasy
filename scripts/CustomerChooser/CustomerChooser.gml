@@ -3,9 +3,15 @@ randomize()
 chooser = random(1)
 
 // Chooses customer type
-if chooser > 0 and chooser <= .2 {global.customertype = "cop"}
-else if chooser > .2 and chooser <= .3 {global.customertype = "special"}
-else {global.customertype = "regular"}
+if global.level = 1 {
+	if chooser > 0 and chooser <= .1 {global.customertype = "special"}
+	else {global.customertype = "regular"}
+}
+else {
+	if chooser > 0 and chooser <= .2 {global.customertype = "cop"}
+	else if chooser > .2 and chooser <= .3 {global.customertype = "special"}
+	else {global.customertype = "regular"}
+}
 
 // Picks between the customer subimages, making sure the same one isn't called twice
 if global.customertype = "regular"{
@@ -37,7 +43,7 @@ if global.customertype = "regular"{
 }
 
 else if global.customertype = "cop"{
-	if global.level = 2 {
+	if global.level > 1 and global.level < 4 {
 		pick = choose(0,2,3,4,5)
 		if pick = global.coplastpick{
 			while pick = global.coplastpick{
@@ -57,13 +63,15 @@ else if global.customertype = "cop"{
 }
 
 else {
-	if global.level < 3 {
+	if global.level < 4 {
 		pick = 0
+		/*
 		if pick = global.speciallastpick{
 			while pick = global.speciallastpick{
 				pick = round(random_range(0,1))
 			}
 		}
+		*/
 		global.speciallastpick = pick
 	}
 	else {
