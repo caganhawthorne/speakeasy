@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "68a05ff0-1799-46da-a587-e0cf9b53a161",
+            "Value": {
+                "id": "4ebddd4c-9e01-413b-932e-b2fb22731e6d",
+                "resourcePath": "sounds\\snd_moneyLost\\snd_moneyLost.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "68c92385-1ad5-4be4-bedb-4805746ff379",
             "Value": {
                 "id": "673675ed-0b02-42c2-909b-ae7571a38212",
