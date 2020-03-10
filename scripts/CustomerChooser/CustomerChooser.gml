@@ -43,7 +43,7 @@ if global.customertype = "regular"{
 }
 
 else if global.customertype = "cop"{
-	if global.level > 1 and global.level < 4 {
+	if global.level = 2 {
 		pick = choose(0,2,3,4,5)
 		if pick = global.coplastpick{
 			while pick = global.coplastpick{

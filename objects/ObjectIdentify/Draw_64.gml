@@ -1,0 +1,1 @@
+if draw {draw_text(x,y+20,objectname)}
