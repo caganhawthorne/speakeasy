@@ -25,9 +25,6 @@ if global.ismob = true {
 	global.customertime = room_speed*30
 }
 
-// Creates drink maker contains
-instance_create_depth(100,20,-8,IngredientText)
-
 // Sets their order [cup,ice,drink,topping]
 
 // want ice?

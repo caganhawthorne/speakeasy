@@ -44,15 +44,23 @@ if global.customertype = "regular"{
 
 else if global.customertype = "cop"{
 	if global.level = 2 {
-		pick = choose(0,2,3,4,5)
+		pick = choose(0,2,3,4,5,6,7)
 		if pick = global.coplastpick{
 			while pick = global.coplastpick{
 				pick = round(random_range(0,5))
 			}
 		}
 	}
+	else if global.level = 3{
+		pick = choose(3,4,5,6,7,8,9)
+		if pick = global.coplastpick{
+			while pick = global.coplastpick{
+				pick = round(random_range(1,6))
+			}
+		}
+	}
 	else {
-		pick = round(random_range(1,6))
+		pick = choose(1,3,4,5,6,7,8,9)
 		if pick = global.coplastpick{
 			while pick = global.coplastpick{
 				pick = round(random_range(1,6))

@@ -87,3 +87,4 @@ if global.level = 2 {
 
 // Sets display text for objects
 instance_create_depth(0,0,-11,ObjectIdentify)
+instance_create_depth(10,300,-11,IngredientText)

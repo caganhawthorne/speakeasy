@@ -1,5 +1,5 @@
 // Send it back to where it first was if not in the drink-making square or if there is already a cup
-if place_meeting(x,y,MakeDrink) and !place_meeting(x,y,ToppingParent){
+if place_meeting(x,y,MakeDrink) and !place_meeting(x,y,ToppingParent) and place_meeting(x,y,CupParent){
 	moving = false
 	global.grab = false
 	x = MakeDrink.x
