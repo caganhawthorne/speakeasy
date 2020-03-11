@@ -11,6 +11,22 @@ if place_meeting(x,y,MakeDrink) and MakeDrink.hascup and !place_meeting(x,y,IceB
 		{
 			audio_play_sound(snd_s_iceE, 1000, false);
 		}
+		else if position_meeting(x,y,DrinkParent) and global.makercontains[0] = "champagne"
+		{
+			audio_play_sound(snd_f_iceF, 1000, false);
+		}
+		else if global.makercontains[0] = "champagne"
+		{
+			audio_play_sound(snd_f_iceE, 1000, false);
+		}
+		else if position_meeting(x,y,DrinkParent) and global.makercontains[0] = "martini"
+		{
+			audio_play_sound(snd_m_iceF, 1000, false);
+		}
+		else if global.makercontains[0] = "martini"
+		{
+			audio_play_sound(snd_m_iceE, 1000, false);
+		}
 		audioPlayed = true;
 	}
 	moving = false
