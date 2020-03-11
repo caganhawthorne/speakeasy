@@ -10,11 +10,13 @@ if place_meeting(x,y,MakeDrink) and MakeDrink.hascup and !place_meeting(x,y,Drin
 		}
 		if global.makercontains[0] = "champagne"
 		{
-			audio_play_sound(snd_f_pour0, 1000, false);
+			soundPick1 = choose(snd_f_down0,snd_f_down1)
+			audio_play_sound(soundPick1, 1000, false);
 		}
 		if global.makercontains[0] = "martini"
 		{
-			audio_play_sound(snd_m_pour0, 1000, false);
+			soundPick2 = choose(snd_m_down0, snd_m_down1)
+			audio_play_sound(soundPick2, 1000, false);
 		}
 		audioPlayed = true;
 	}
