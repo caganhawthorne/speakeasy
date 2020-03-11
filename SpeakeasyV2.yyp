@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "5095c709-0a0d-4765-9e83-e4abf4452163",
+            "Value": {
+                "id": "508b2436-ca65-4314-a937-564f4d1a057c",
+                "resourcePath": "sounds\\snd_syrup\\snd_syrup.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "546f657e-1485-464d-a6bd-ad569ad03bd5",
             "Value": {
                 "id": "5264c745-a4fa-4461-9151-d6d8f32a9a6d",
