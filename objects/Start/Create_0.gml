@@ -5,3 +5,5 @@
 global.level = 3
 // Sets the current money total
 global.money = 0
+
+audio_play_sound(m_menu, 1000, true);
