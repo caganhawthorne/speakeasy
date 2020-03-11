@@ -5,3 +5,4 @@ firsty = y
 moving = false
 // Checks to see if the mouse already has something grabbed
 global.grab = false
+audioPlayed = false;
