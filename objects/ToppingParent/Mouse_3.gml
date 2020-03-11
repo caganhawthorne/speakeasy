@@ -2,7 +2,7 @@
 if place_meeting(x,y,MakeDrink) and !place_meeting(x,y,ToppingParent) and place_meeting(x,y,CupParent) and place_meeting(x,y,DrinkParent)
 {
 	if (audioPlayed = false) {
-		audio_play_sound(snd_bell, 500, false)
+		audio_play_sound(snd_syrup, 500, false)
 		audioPlayed = true;
 	}
 	moving = false
