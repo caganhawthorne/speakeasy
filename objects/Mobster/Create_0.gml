@@ -6,3 +6,12 @@ alpha = .009
 global.choice = true
 
 global.served = false
+
+// Need this for bell
+global.mobsterserved = false
+global.mobsterclicked = false
+
+paid = false
+
+//Set time
+global.customertime = room_speed*30

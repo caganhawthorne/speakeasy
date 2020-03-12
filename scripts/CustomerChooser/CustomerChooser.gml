@@ -11,6 +11,7 @@ else {
 	if chooser > 0 and chooser <= .2 {global.customertype = "cop"}
 	else if chooser > .2 and chooser <= .3 {global.customertype = "special"}
 	else {global.customertype = "regular"}
+
 }
 
 // Picks between the customer subimages, making sure the same one isn't called twice

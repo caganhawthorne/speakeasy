@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "b72d70af-225a-4a5b-862c-fd36b4a23257",
+            "Value": {
+                "id": "7c71f4f4-25b5-4116-b90d-22668948f890",
+                "resourcePath": "sprites\\SKidSpeech\\SKidSpeech.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b7bac1f6-8760-4cf7-8ada-75c7e31b9e82",
             "Value": {
                 "id": "99c9041c-4934-4841-a3a3-a108084694af",

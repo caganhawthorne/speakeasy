@@ -5,8 +5,25 @@ any = false
 
 if global.topping = "any" {any = true}
 
+// Mobster version
+if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and instance_exists(Mobster) {
+	global.mobsterclicked = true
+	correct = true
+	for (i = 0; i < array_length_1d(global.makercontains); i++) {
+		if global.makercontains[i] = "ice" or global.makercontains[i] = "whiskey" or global.makercontains[i] = "none" or global.makercontains[i] = "shot" {cn++}
+	}
+	if cn != 4 {correct = false}
+	if correct = true {global.mobsterserved = true}
+	else {global.mobsterserved = false}
+}
+
+// Kid version
+else if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and global.customertype = "special" and Customer.pick = 0 {
+	global.served = true
+}
+
 // Any toppings version
-if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = true{
+else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = true{
 	if global.customertype = "cop" {
 		global.served = true
 		global.losemessage = "You served a cop."
@@ -27,7 +44,7 @@ if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 
 }
 
 // Toppings version
-if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = false{
+else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = false{
 	if global.customertype = "cop" {
 		global.served = true
 		room_goto(LoseRoom)

@@ -6,6 +6,7 @@ if global.customertime != -1000 {
 // Fade out and destroy if service is refused or if you run out of serving time on a normal mobs
 if global.choice = false or (global.customertime <= 0 and global.customertime != -1000) {
 	// Uses paid to only iterate once
+	// kid version
 	if pick = 1 and global.customertype = "special" and paid = false {
 		paid = true
 		global.pay -= 20
@@ -34,6 +35,16 @@ else if global.choice = true{
 			with no {image_index = 1}
 		}
 	}
+	// kid version of below
+	else if global.served = true and global.customertype = "special" and pick = 0 {
+		if instance_number(Speech > 1){instance_destroy(Speech)}
+		instance_create_depth(x-230,y-300,0,Speech)
+		if global.served = true and paid = false {
+			paid = true
+			global.pay = 0
+			instance_create_depth(TipJar.x,TipJar.y,-9,MoneyAdd)
+		}
+	}
 	// Sets the actions for when the customer is satisfied
 	else if global.served = true{
 		// Creates a new speech bubble with satisfied text (handled in Speech)
@@ -57,7 +68,6 @@ else if global.choice = true{
 				else {global.pay += 10}
 			}
 			else {global.pay = 15}
-			if global.customertype = "special" and pick = 0 {global.pay = 0}
 			instance_create_depth(TipJar.x,TipJar.y,-9,MoneyAdd)
 		}
 		// Create the MoneyAdd object over the tip jar

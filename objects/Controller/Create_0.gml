@@ -66,8 +66,8 @@ for (i = 0; i < array_length_1d(global.drinklist); i += 1){
 // Same, but with toppings
 for (i = 0; i < array_length_1d(global.toppinglist); i += 1){
 	if global.toppinglist[i] = "strawberry"{instance_create_depth(64,896,-4,Strawberry)}
-	if global.toppinglist[i] = "lime"{instance_create_depth(160,896,-4,Lime)}
-	if global.toppinglist[i] = "lemon"{instance_create_depth(256,896,-4,Lemon)}
+	if global.toppinglist[i] = "lime"{instance_create_depth(170,896,-4,Lime)}
+	if global.toppinglist[i] = "lemon"{instance_create_depth(276,896,-4,Lemon)}
 }
 // Same, but with cups
 for (i = 0; i < array_length_1d(global.cuplist); i += 1){

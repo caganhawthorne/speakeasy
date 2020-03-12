@@ -19,6 +19,12 @@ script_execute(CustomerChooser)
 if (global.customertype = "special" and pick = 1) or (global.customertype = "cop" and pick = 1) {global.ismob = true}
 else {global.ismob = false}
 
+// Checks to see if customer is a kid
+if global.customertype = "special" and pick = 0 {
+	kid = true
+}
+else {kid = false}
+
 // Creates a timer if neccessary
 global.customertime = -1000
 if global.ismob = true {

@@ -1,4 +1,5 @@
 depth = -7
+kid = false
 orderString = ""
 dialogueArray = ["Gimme a ", "I'm gunning for a ", "I would like a ","Could I get a ","Get me a "]
 
@@ -8,6 +9,14 @@ if instance_exists(RookieCop) {
 }
 else if instance_exists(Mobster) {
 	sprite_index = SMobsterSpeech
+}
+else if instance_exists(Customer) and global.customertype = "special" and global.ismob = false {
+	if Customer.pick = 0{
+		sprite_index = SKidSpeech
+		// This needs to be here for some reason
+		image_index = 1
+		kid = true
+	}
 }
 
 //generic order dialogue
@@ -47,10 +56,10 @@ else {
 	}
 	switch(global.ice) {
 		case("ice"):
-			orderString += "with ice"
+			orderString += "and ice"
 			break
 		case("no ice"):
-			orderString += "with no ice"
+			orderString += choose("and no ice","")
 			break
 		default:
 			orderString += "[error]"
@@ -61,16 +70,16 @@ else {
 			orderString += "."
 			break
 		case("any"):
-			orderString += " and any syrup."
+			orderString += " with any syrup."
 			break
 		case("lemon"):
-			orderString += " and lemon syrup."
+			orderString += " with lemon syrup."
 			break
 		case("strawberry"):
-			orderString += " and strawberry syrup."
+			orderString += " with strawberry syrup."
 			break
 		case("lime"):
-			orderString += " and lime syrup."
+			orderString += " with lime syrup."
 			break
 		default:
 			orderString += "[error]"
