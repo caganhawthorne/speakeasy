@@ -6,6 +6,18 @@ if place_meeting(x,y,MakeDrink) and !place_meeting(x,y,CupParent){
 	y = MakeDrink.y
 	// Sets the MakeDrink sprite to its second image
 	with MakeDrink {image_index = 1}
+	if object_get_name(object_index) = ShotGlass 
+	{
+		audio_play_sound(snd_s_down0, 400, false);
+	}
+	if object_get_name(object_index) = MartiniGlass 
+	{
+		audio_play_sound(snd_m_down0, 400, false);
+	}
+	if object_get_name(object_index) = ChampagneGlass 
+	{
+		audio_play_sound(snd_f_down0, 400, false);
+	}
 }
 else {
 	moving = false

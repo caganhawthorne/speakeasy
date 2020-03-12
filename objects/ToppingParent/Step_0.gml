@@ -3,6 +3,7 @@ if global.clear = true {
 	depth = -4
 	x = firstx
 	y = firsty
+	audioPlayed = false
 }
 
 // Moves with mouse if held onto
