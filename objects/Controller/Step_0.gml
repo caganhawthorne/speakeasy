@@ -13,7 +13,10 @@ if global.time = 0 and global.money >= global.moneyneeded and winspawn = false{
 	global.money -= global.moneyneeded 
 }
 // Losing conditions (not having enough money)
-else if global.time = 0 and global.money < global.moneyneeded and !instance_exists(Win) {room_goto(LoseRoom)}
+else if global.time = 0 and global.money < global.moneyneeded and !instance_exists(Win) {
+	global.losemessage = "You did not earn enough money today."
+	room_goto(LoseRoom)
+}
 // Player serves to a cop
 //if global.customertype = "cop" and global.served = true {instance_create_depth(room_width/2,room_height/2,-9,Lose)}
 

@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "a4f716c5-7353-442b-b3be-6ab5757b3655",
+            "Value": {
+                "id": "8af23d47-4c27-4e07-b42c-8f528a46ac6b",
+                "resourcePath": "objects\\Mobster\\Mobster.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a57e84b3-e92c-4f39-bca6-b99053d55e2c",
             "Value": {
                 "id": "30f44c55-d7a1-452c-8394-0fa49a72fbdd",
@@ -932,6 +940,14 @@
                 "id": "e53e30b5-01e2-4a1d-9e8e-42b9cccc8465",
                 "resourcePath": "views\/d4c5d03b-5b03-410d-a5de-b8822f11f9bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d5865fa1-1eb9-422f-8372-4cdf18655288",
+            "Value": {
+                "id": "5ae84cbe-47f8-4d37-9d31-93c6ede7882e",
+                "resourcePath": "sprites\\SMobsterSpeech\\SMobsterSpeech.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

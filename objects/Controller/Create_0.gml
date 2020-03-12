@@ -9,6 +9,9 @@ global.gameend = false
 // Sets the time (7200)
 global.time = room_speed*120
 
+// Sets the message for when you lose
+global.losemessage = ""
+
 // Sets the inital drink options, adds extras on as the game progresses
 global.drinklist = ["whiskey","vodka","gin"]
 //if global.level = 2 {global.drinklist[array_length_1d(global.drinklist)] = "absinthe"}
@@ -83,6 +86,10 @@ global.specialcustomer = false
 if global.level = 2 {
 	global.specialcustomer = true
 	instance_create_depth(960,416,-1,RookieCop)
+}
+else if global.level = 4 {
+	global.specialcustomer = true
+	instance_create_depth(960,416,-1,Mobster)
 }
 
 // Sets display text for objects

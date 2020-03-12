@@ -9,6 +9,7 @@ if global.topping = "any" {any = true}
 if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = true{
 	if global.customertype = "cop" {
 		global.served = true
+		global.losemessage = "You served a cop."
 		room_goto(LoseRoom)
 		}
 	else {
@@ -16,7 +17,10 @@ if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 
 		if global.makercontains[0] = global.order[0] and global.makercontains[1] = global.order[1] {correct = true}
 		else {correct = false}
 		if correct = true {global.served = true}
-		else {global.choice = false}
+		else {
+			global.choice = false
+			audio_play_sound(snd_moneyLost,500,false)
+		}
 		// The customer currently just leaves if you get the order wrong. Works the same way as denying them service
 	}
 	
@@ -43,7 +47,10 @@ if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 
 		if correct = true {
 			global.served = true
 			}
-		else {global.choice = false}
+		else {
+			global.choice = false
+			audio_play_sound(snd_moneyLost,500,false)
+		}
 		// The customer currently just leaves if you get the order wrong. Works the same way as denying them service
 	}
 }

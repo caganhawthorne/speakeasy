@@ -1,2 +1,3 @@
 // Go to the main room
-room_goto(BarRoom)
+if sprite_index = SStart {sprite_index = SControls}
+else {room_goto(BarRoom)}
