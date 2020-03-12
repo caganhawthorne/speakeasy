@@ -64,7 +64,7 @@ else {
 			orderString += " and lemon syrup."
 			break
 		case("strawberry"):
-			orderString += " and strawberry syrup."
+			orderString += " and strawberry."
 			break
 		case("lime"):
 			orderString += " and lime syrup."

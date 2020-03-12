@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "944162df-7bf9-42a8-a605-aa64106e4d63",
+            "Value": {
+                "id": "003213b3-6e36-47ea-ba2f-7ea2088132e2",
+                "resourcePath": "sprites\/SControls\/SControls.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97181f7a-39c0-4f8a-8705-eb4e5744d897",
             "Value": {
                 "id": "51699542-2613-42bd-a9fe-3dc218c1e8b4",
