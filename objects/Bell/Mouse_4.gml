@@ -47,6 +47,7 @@ else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length
 else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = false{
 	if global.customertype = "cop" {
 		global.served = true
+		global.losemessage = "You served a cop."
 		room_goto(LoseRoom)
 		}
 	else {
