@@ -15,3 +15,7 @@ paid = false
 
 //Set time
 global.customertime = room_speed*30
+
+//Spawns clock
+t = instance_create_depth(x+250,y-270,-10,Time)
+with t {globaltime = false}

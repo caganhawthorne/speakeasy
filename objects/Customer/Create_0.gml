@@ -52,3 +52,9 @@ global.order = [global.cup,global.ice,global.drink,global.topping]
 
 // Sets whether or not they paid yet
 paid = false
+
+if global.ismob = true {
+	//Spawns clock
+	t = instance_create_depth(x+250,y-270,-10,Time)
+	with t {globaltime = false}
+}

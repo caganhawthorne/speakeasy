@@ -7,6 +7,6 @@ draw_text(30,70,"Day "+string(global.level)+" of 5")
 
 // TESTING
 
-draw_text(30,110,"Time: "+string(global.time))
+//draw_text(30,110,"Time: "+string(global.time))
 
 // draw_text(0,60,string(alarm[0]))

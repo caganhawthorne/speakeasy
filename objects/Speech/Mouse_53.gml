@@ -12,8 +12,7 @@ if instance_exists(SpecialCustomer) {
 		}
 	}
 	else if instance_exists(Mobster) {
-		if image_index = 0 and global.choice = true {image_index = 1}
-		else if image_index = 0 and global.choice = false {image_index = 5}
+		if (image_index = 0 or image_index = 1) and global.choice = false {image_index = 5}
 		else if endspeech = true {
 				global.served = true
 			}

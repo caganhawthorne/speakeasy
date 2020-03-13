@@ -7,7 +7,9 @@ if instance_exists(SpecialCustomer) and !instance_exists(ChooseServe) and firstc
 		else {image_index = 1}
 	}
 	else if instance_exists(Mobster) {
-		if global.mobsterclicked = true {
+		if image_index = 0 and global.choice = true {image_index = 1}
+		if global.customertime <= 0 and global.customertime != -1000 and firstclick = false {image_index = 5}
+		else if global.mobsterclicked = true {
 			if global.mobsterserved = true and firstclick = false {image_index = 2}
 			else if (global.mobsterserved = false or global.choice = false) and firstclick = false {image_index = 5}
 		}

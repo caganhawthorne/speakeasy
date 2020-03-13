@@ -95,3 +95,6 @@ else if global.level = 4 {
 // Sets display text for objects
 instance_create_depth(0,0,-11,ObjectIdentify)
 instance_create_depth(10,300,-11,IngredientText)
+
+// Creates clock
+instance_create_depth(1824,128,-10,Time)

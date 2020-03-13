@@ -52,3 +52,9 @@ if instance_exists(Speech){
 if global.customertime <= 0 and global.customertime != -1000 {
 	global.customertime = 0
 }
+
+// Sees if you ran out of time
+if global.customertime <= 0 and global.customertime != -1000 {
+	global.mobsterserved = false
+	global.choice = false
+}
