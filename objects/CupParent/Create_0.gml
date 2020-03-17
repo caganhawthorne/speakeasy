@@ -8,3 +8,5 @@ global.grab = false
 
 // Sets initial color blend
 initblend = image_blend
+//Sound player
+audioPlayed = false;

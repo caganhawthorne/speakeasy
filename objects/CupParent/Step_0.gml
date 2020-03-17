@@ -2,6 +2,7 @@
 if global.clear = true {
 	x = firstx
 	y = firsty
+	audioPlayed = false;
 }
 
 // Moves with mouse if held onto
