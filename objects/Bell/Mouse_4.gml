@@ -31,7 +31,7 @@ else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length
 		}
 	else {
 		correct = false
-		if global.makercontains[0] = global.order[0] and global.makercontains[1] = global.order[1] {correct = true}
+		if global.makercontains[0] = global.order[0] and global.makercontains[1] = global.order[1] and global.makercontains[2] = global.order[2] {correct = true}
 		else {correct = false}
 		if correct = true {global.served = true}
 		else {
@@ -53,13 +53,11 @@ else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length
 	else {
 		// Check to see if the drink made is correct. If so, served = true
 		// Final check
-		correct = false
+		correct = true
 		// See how many string variables are shared between order and makercontains
-		if global.order = global.makercontains {correct = true}
 		for (i = 0; i < array_length_1d(global.makercontains); i += 1){
 			for (j = 0; j < array_length_1d(global.order); j += 1){
-				if global.makercontains[i] = global.order[j] {correct = true}
-				else {correct = false}
+				if global.makercontains[i] != global.order[j] {correct = false}
 			}
 		}
 		if correct = true {

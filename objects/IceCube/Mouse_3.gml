@@ -47,4 +47,5 @@ else {
 	global.grab = false
 	x = firstx
 	y = firsty
+	depth = -4
 }
