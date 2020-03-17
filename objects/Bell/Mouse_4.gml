@@ -6,7 +6,7 @@ any = false
 if global.topping = "any" {any = true}
 
 // Mobster version
-if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and instance_exists(Mobster) {
+if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) = 4 and instance_exists(Mobster) {
 	global.mobsterclicked = true
 	correct = true
 	for (i = 0; i < array_length_1d(global.makercontains); i++) {
@@ -18,12 +18,12 @@ if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 
 }
 
 // Kid version
-else if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and global.customertype = "special" and Customer.pick = 0 {
+else if instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) = 4 and global.customertype = "special" and Customer.pick = 0 {
 	global.served = true
 }
 
 // Any toppings version
-else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = true{
+else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) = 4 and any = true{
 	if global.customertype = "cop" {
 		global.served = true
 		global.losemessage = "You served a cop."
@@ -31,7 +31,7 @@ else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length
 		}
 	else {
 		correct = false
-		if global.makercontains[0] = global.order[0] and global.makercontains[1] = global.order[1] {correct = true}
+		if global.makercontains[0] = global.order[0] and global.makercontains[1] = global.order[1] and global.makercontains[2] = global.order[2]{correct = true}
 		else {correct = false}
 		if correct = true {global.served = true}
 		else {
@@ -44,7 +44,7 @@ else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length
 }
 
 // Toppings version
-else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) > 0 and any = false{
+else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length_1d(global.makercontains) = 4 and any = false{
 	if global.customertype = "cop" {
 		global.served = true
 		global.losemessage = "You served a cop."
@@ -53,15 +53,13 @@ else if Speech.kid = false and instance_number(ChooseServe) = 0 and array_length
 	else {
 		// Check to see if the drink made is correct. If so, served = true
 		// Final check
-		correct = false
-		// See how many string variables are shared between order and makercontains
-		if global.order = global.makercontains {correct = true}
-		for (i = 0; i < array_length_1d(global.makercontains); i += 1){
-			for (j = 0; j < array_length_1d(global.order); j += 1){
-				if global.makercontains[i] = global.order[j] {correct = true}
-				else {correct = false}
-			}
+		correct = true
+		i = 0
+		while (i < array_length_1d(global.makercontains) and correct) {
+			if global.makercontains[i] != global.order[i] {correct = false}
+			i++	
 		}
+		
 		if correct = true {
 			global.served = true
 			}
