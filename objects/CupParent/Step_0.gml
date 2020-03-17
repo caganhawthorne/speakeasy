@@ -24,3 +24,17 @@ if place_meeting(x,y,MakeDrink) and place_meeting(x,y,DrinkParent) and place_mee
 else if place_meeting(x,y,MakeDrink) and place_meeting(x,y,DrinkParent) {image_index = 1}
 else if place_meeting(x,y,MakeDrink) and place_meeting(x,y,IceCube) {image_index = 2}
 else {image_index = 0}
+
+// Changes the color of the cup depending on what is in it
+if place_meeting(x,y,MakeDrink) {
+	for (i = 0; i < array_length_1d(global.makercontains); i++) {
+		// This drink ones have to be written like this and I don't know why
+		if place_meeting(Whiskey.x,Whiskey.y,MakeDrink) {image_blend = make_color_rgb(148,117,63)}
+		else if global.makercontains[i] = "lime" {image_blend = make_color_rgb(101,235,134)}
+		else if global.makercontains[i] = "strawberry" {image_blend = make_color_rgb(235,101,125)}
+		else if global.makercontains[i] = "lemon" {image_blend = make_color_rgb(215,235,101)}
+		else if place_meeting(Gin.x,Gin.y,MakeDrink) or place_meeting(Vodka.x,Vodka.y,MakeDrink) {image_blend = make_color_rgb(219,219,219)}
+		else {image_blend = initblend}
+	}
+}
+else {image_blend = initblend}
